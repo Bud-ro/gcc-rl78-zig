@@ -1,4 +1,4 @@
-//! Build rl78-elf cross-compiler toolchain (binutils 2.42 + GCC 14.2.0).
+//! Build rl78-elf cross-compiler toolchain (binutils 2.44 + GCC 14.2.0).
 //! Uses shared build logic from gcc-cross-zig.
 //! SPDX-License-Identifier: GPL-2.0-or-later
 
@@ -20,7 +20,7 @@ pub fn build(b: *std.Build) void {
         .target_os = "elf",
         .target_vendor = "unknown",
 
-        .binutils_version = .{ .major = 2, .minor = 42, .patch = 0 },
+        .binutils_version = .{ .major = 2, .minor = 44, .patch = 0 },
         .gcc_version = "14.2.0",
         .gcc_datestamp = "20240801",
 
